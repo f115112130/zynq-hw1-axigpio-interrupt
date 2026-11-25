@@ -58,6 +58,15 @@ Timer 計算：`0xFFFFFFFF - 0xFF676980 + 1 = 10,000,000` counts，50 MHz 下 = 
 4. 終端機：COM port、**115200**、8N1
 
 ## 執行結果
+
+### 實作影片
+按下板子上的按鈕，觸發 GPIO 中斷，左上角的 LED 跟著改變（2026/11/05 拍攝）。
+
+<img src="docs/demo.gif" width="270" alt="按鈕中斷改變 LED 的實作影片">
+
+完整影片：[docs/demo.mp4](docs/demo.mp4)
+
+### 終端機輸出
 SDK Terminal（COM6, 115200）實際輸出：
 ```
 [TIMER] 5 sec reminder #998  (total 4990 sec)
@@ -72,9 +81,9 @@ Timer 中斷每 5 秒提醒一次，連續執行超過 80 分鐘穩定。
 ```
 [BTN] Interrupt : 1  (btn = 0x1)
 ```
-<!-- TODO：補上按鈕中斷的終端機截圖與 LED 照片 -->
+<!-- TODO：補上按鈕中斷的終端機截圖 -->
 
-建議在 `docs/` 放：Block Design 截圖、Address Editor 截圖、終端機輸出截圖、板子 LED 照片。
+建議再補進 `docs/`：Block Design 截圖、Address Editor 截圖、終端機輸出截圖。
 
 ## 遇到的問題與解決方法
 
